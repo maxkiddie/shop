@@ -1,0 +1,42 @@
+{"properties": [
+  {
+    "name": "ribbon.ConnectTimeout",
+    "type": "java.lang.String",
+    "description": "A description for 'ribbon.ConnectTimeout'"
+  },
+  {
+    "name": "zuul.SendErrorFilter",
+    "type": "java.lang.String",
+    "description": "A description for 'zuul.SendErrorFilter'"
+  },
+  {
+    "name": "zuul.SendResponseFilter",
+    "type": "java.lang.String",
+    "description": "A description for 'zuul.SendResponseFilter'"
+  },
+  {
+    "name": "ribbon.OkToRetryOnAllOperations",
+    "type": "java.lang.String",
+    "description": "A description for 'ribbon.OkToRetryOnAllOperations'"
+  },
+  {
+    "name": "ribbon.ReadTimeout",
+    "type": "java.lang.String",
+    "description": "A description for 'ribbon.ReadTimeout'"
+  },
+  {
+    "name": "hystrix.command",
+    "type": "java.lang.String",
+    "description": "A description for 'hystrix.command'"
+  },
+  {
+    "name": "ribbon.MaxAutoRetries",
+    "type": "java.lang.String",
+    "description": "A description for 'ribbon.MaxAutoRetries'"
+  },
+  {
+    "name": "ribbon.MaxAutoRetriesNextServer",
+    "type": "java.lang.String",
+    "description": "A description for 'ribbon.MaxAutoRetriesNextServer'"
+  }
+]}
