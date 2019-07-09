@@ -12,6 +12,7 @@
 		<module>shop-common</module>
 		<module>shop-zuul</module>
 		<module>shop-address</module>
+		<module>shop-config</module>
 	</modules>
 
 	<parent>

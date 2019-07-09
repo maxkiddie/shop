@@ -1,6 +1,7 @@
 package com.kiddie.user.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +17,9 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
+	@Value("${server.port}")
+	private String port;
+
 	@PostMapping
 	public ResponseEntity<User> save(User user) {
 		return ResponseEntity.ok(userService.save(user));
@@ -23,7 +27,7 @@ public class UserController {
 
 	@GetMapping
 	public ResponseEntity<PageVo<User>> list(User user) {
-		System.out.println("访问了list");
+		System.out.println("访问了list,port=" + port);
 		return ResponseEntity.ok(userService.list(user));
 	}
 }
