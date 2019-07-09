@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server: 
+        git: 
+          uri: https://github.com/maxkiddie/shop-config
+          username: 531592003@qq.com
+          password: 
+server:
+  port: 9080
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10086/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true  #当你获取host时，返回的不是主机名，而是ip
+    ip-address: 127.0.0.1

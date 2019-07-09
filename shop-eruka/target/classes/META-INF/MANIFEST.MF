@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: shop-eruka
+Implementation-Version: 1.0
+Built-By: Wellson
+Implementation-Vendor-Id: com.kiddie.parent
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/shop/shop-eruka
+Created-By: Maven Integration for Eclipse
+
