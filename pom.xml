@@ -13,6 +13,7 @@
 		<module>shop-zuul</module>
 		<module>shop-address</module>
 		<module>shop-config</module>
+		<module>shop-zipkin</module>
 	</modules>
 
 	<parent>
@@ -36,6 +37,7 @@
 		<mybatis-starter.version>2.0.1</mybatis-starter.version>
 		<fastjson.version>1.2.54</fastjson.version>
 		<jackson.version>2.9.7</jackson.version>
+		<zipkin.version>2.8.0</zipkin.version>
 	</properties>
 
 	<dependencyManagement>
@@ -53,6 +55,21 @@
 				<artifactId>spring-boot-starter-web</artifactId>
 				<version>${spirngboot.version}</version>
 			</dependency>
+			
+			<!-- zipkin start -->
+			<dependency>
+				<groupId>io.zipkin.java</groupId>
+				<artifactId>zipkin-server</artifactId>
+				<version>${zipkin.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.zipkin.java</groupId>
+				<artifactId>zipkin-autoconfigure-ui</artifactId>
+				<version>${zipkin.version}</version>
+			</dependency>
+			<!-- zipkin end -->
+
 			<dependency>
 				<groupId>com.kiddie.parent</groupId>
 				<artifactId>shop-common</artifactId>

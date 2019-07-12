@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.kiddie.parent</groupId>
-		<artifactId>shop-user</artifactId>
+		<artifactId>shop</artifactId>
 		<version>1.0</version>
 	</parent>
-	<artifactId>shop-user-service</artifactId>
+	<artifactId>shop-zipkin</artifactId>
 
 	<dependencies>
 		<dependency>
@@ -15,17 +15,13 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-server</artifactId>
 		</dependency>
+
 		<dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
-        </dependency>
-		<dependency>
-			<groupId>com.kiddie.parent</groupId>
-			<artifactId>shop-user-interface</artifactId>
-			<version>${shop.version}</version>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-autoconfigure-ui</artifactId>
 		</dependency>
 	</dependencies>
 </project>
