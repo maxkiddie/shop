@@ -27,7 +27,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<spirngboot.version>2.0.4.RELEASE</spirngboot.version>
+		<spirngboot.version>2.5.12</spirngboot.version>
 		<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 		<shop.version>1.0</shop.version>
 		<jpa.version>1.0</jpa.version>
